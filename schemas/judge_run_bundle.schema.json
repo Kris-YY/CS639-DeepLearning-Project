@@ -1,0 +1,228 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/judge_run_bundle.schema.json",
+  "title": "Judge Run Bundle",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "source_result_dir",
+    "runner_type",
+    "condition",
+    "records"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "source_result_dir": {
+      "type": "string"
+    },
+    "repo_root": {
+      "type": "string"
+    },
+    "runner_type": {
+      "type": "string",
+      "enum": [
+        "baseline",
+        "plan_and_act_static",
+        "plan_and_act_replanning",
+        "unknown"
+      ]
+    },
+    "condition": {
+      "type": "string"
+    },
+    "extracted_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/judgeRunRecord"
+      }
+    }
+  },
+  "$defs": {
+    "judgeRunRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "task_id",
+        "intent",
+        "condition",
+        "runner_type",
+        "final_status",
+        "final_answer",
+        "final_action",
+        "final_url",
+        "final_page_text",
+        "step_count",
+        "last_actions",
+        "notes",
+        "error",
+        "score",
+        "model_name",
+        "model_endpoint",
+        "action_set_tag",
+        "observation_type",
+        "render_path",
+        "actions_path",
+        "task_config_path"
+      ],
+      "properties": {
+        "task_id": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "intent": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "condition": {
+          "type": "string"
+        },
+        "runner_type": {
+          "type": "string",
+          "enum": [
+            "baseline",
+            "plan_and_act_static",
+            "plan_and_act_replanning",
+            "unknown"
+          ]
+        },
+        "final_status": {
+          "type": "string",
+          "enum": [
+            "answered",
+            "early_stop",
+            "stopped_no_answer",
+            "crash",
+            "incomplete",
+            "no_record"
+          ]
+        },
+        "final_answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "final_action": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "final_url": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "final_page_text": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "step_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "last_actions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "error": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "score": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "model_name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "model_endpoint": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "action_set_tag": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "observation_type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "render_path": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "actions_path": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "task_config_path": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "raw_reference": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "result_dir_config_path",
+            "error_file_path"
+          ],
+          "properties": {
+            "result_dir_config_path": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "error_file_path": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
