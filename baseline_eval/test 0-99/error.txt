@@ -1,0 +1,11 @@
+[Config file]: /var/folders/kz/xfpymn016nnflmlpk508nstw0000gn/T/tmpe6j0higr/81.json
+[Unhandled Error] AssertionError()
+Traceback (most recent call last):
+  File "/Users/baimuqing/Nick-Plan/VisualAgentBench/VAB-WebArena-Lite/run.py", line 548, in test
+    score = evaluator(
+  File "/Users/baimuqing/Nick-Plan/VisualAgentBench/VAB-WebArena-Lite/evaluation_harness/evaluators.py", line 624, in __call__
+    cur_score = evaluator(trajectory, config_file, page)
+  File "<@beartype(evaluation_harness.evaluators.StringEvaluator.__call__) at 0x3173d3640>", line 92, in __call__
+  File "/Users/baimuqing/Nick-Plan/VisualAgentBench/VAB-WebArena-Lite/evaluation_harness/evaluators.py", line 242, in __call__
+    assert isinstance(value, list)
+AssertionError

@@ -1,0 +1,57 @@
+[Config file]: /var/folders/kz/xfpymn016nnflmlpk508nstw0000gn/T/tmpp4vqjdv5/81.json
+[Unhandled Error] AssertionError()
+Traceback (most recent call last):
+  File "/Users/baimuqing/Nick-Plan/VisualAgentBench/VAB-WebArena-Lite/plan_and_act/run_plan_and_act.py", line 877, in test
+    score = evaluator(
+  File "/Users/baimuqing/Nick-Plan/plan-and-act/plan_and_act/previous_rounds_evaluators.py", line 716, in __call__
+    cur_score = evaluator(previous_rounds, config_file, page)
+  File "<@beartype(plan_and_act.previous_rounds_evaluators.StringPreviousRoundsEvaluator.__call__) at 0x31c2ee8c0>", line 108, in __call__
+  File "/Users/baimuqing/Nick-Plan/plan-and-act/plan_and_act/previous_rounds_evaluators.py", line 287, in __call__
+    any_of_them_got_a_non_zero_score = any(
+  File "/Users/baimuqing/Nick-Plan/plan-and-act/plan_and_act/previous_rounds_evaluators.py", line 288, in <genexpr>
+    evaluate_action(action_str) > 0.0
+  File "/Users/baimuqing/Nick-Plan/plan-and-act/plan_and_act/previous_rounds_evaluators.py", line 279, in evaluate_action
+    score = self._evaluate_normal_mode(pred, configs)
+  File "<@beartype(plan_and_act.previous_rounds_evaluators.StringPreviousRoundsEvaluator._evaluate_normal_mode) at 0x31c2ee830>", line 50, in _evaluate_normal_mode
+  File "/Users/baimuqing/Nick-Plan/plan-and-act/plan_and_act/previous_rounds_evaluators.py", line 201, in _evaluate_normal_mode
+    assert isinstance(value, list)
+AssertionError
+[Config file]: /var/folders/kz/xfpymn016nnflmlpk508nstw0000gn/T/tmp5y_8g07g/88.json
+[Unhandled Error] AttributeError("'NoneType' object has no attribute 'get'")
+Traceback (most recent call last):
+  File "/Users/baimuqing/Nick-Plan/plan-and-act/plan_and_act/cot/utils.py", line 528, in get_previous_round_html_snippet_from_html
+    html_snippet = get_html_snippet_str_from_element(
+  File "/Users/baimuqing/Nick-Plan/plan-and-act/plan_and_act/cot/utils.py", line 343, in get_html_snippet_str_from_element
+    raise ValueError("Cannot find the target element in the HTML.")
+ValueError: Cannot find the target element in the HTML.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/baimuqing/Nick-Plan/VisualAgentBench/VAB-WebArena-Lite/plan_and_act/run_plan_and_act.py", line 761, in test
+    run_coroutine_in_a_separate_thread_with_a_new_event_loop(
+  File "/Users/baimuqing/Nick-Plan/plan-and-act/plan_and_act/cot/utils.py", line 674, in run_coroutine_in_a_separate_thread_with_a_new_event_loop
+    return executor.submit(f).result()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/_base.py", line 458, in result
+    return self.__get_result()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/baimuqing/Nick-Plan/plan-and-act/plan_and_act/cot/utils.py", line 657, in f
+    result = loop.run_until_complete(coroutine)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/Users/baimuqing/Nick-Plan/plan-and-act/plan_and_act/cot/inference/act.py", line 126, in act
+    messages = self.construct_prompt(input)
+  File "/Users/baimuqing/Nick-Plan/plan-and-act/plan_and_act/cot/inference/act.py", line 231, in construct_prompt
+    current_html = get_previous_round_html_snippet_from_html(
+  File "/Users/baimuqing/Nick-Plan/plan-and-act/plan_and_act/cot/utils.py", line 536, in get_previous_round_html_snippet_from_html
+    html_snippet = clean_html(
+  File "/Users/baimuqing/Nick-Plan/plan-and-act/plan_and_act/cot/utils.py", line 151, in clean_html
+    return HTMLCleaner(
+  File "/Users/baimuqing/Nick-Plan/plan-and-act/plan_and_act/html_cleaner.py", line 443, in clean_html
+    self._traverse(body, visitor)
+  File "/Users/baimuqing/Nick-Plan/plan-and-act/plan_and_act/html_cleaner.py", line 459, in _traverse
+    node_custom_id = node.attrs.get(self._id_name)
+AttributeError: 'NoneType' object has no attribute 'get'
