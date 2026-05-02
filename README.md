@@ -507,3 +507,8 @@ In practice, that means:
 - export `DEEPSEEK_API_KEY`
 - also mirror that key into `OPENAI_API_KEY`
 - optionally set `OPENAI_API_URL` to a DeepSeek-compatible base URL as a shell-wide default
+
+
+## Failure types with corresponding descriptions
+
+Understanding
