@@ -1,0 +1,71 @@
+task_id,failure_type
+0,Planning / Strategy Error
+1,Planning / Strategy Error
+2,Instruction Understanding Error
+3,Planning / Strategy Error
+5,Instruction Understanding Error
+6,Planning / Strategy Error
+7,Navigation Error
+9,Instruction Understanding Error
+11,Instruction Understanding Error
+12,Planning / Strategy Error
+13,Planning / Strategy Error
+15,Information Extraction Error
+18,Information Extraction Error
+22,Instruction Understanding Error
+23,Element Grounding Error
+24,Planning / Strategy Error
+25,Instruction Understanding Error
+27,Information Extraction Error
+28,Information Extraction Error
+29,Information Extraction Error
+30,Information Extraction Error
+31,Planning / Strategy Error
+32,Information Extraction Error
+34,Instruction Understanding Error
+35,Information Extraction Error
+36,Information Extraction Error
+37,Information Extraction Error
+41,Planning / Strategy Error
+43,Planning / Strategy Error
+45,Instruction Understanding Error
+46,Instruction Understanding Error
+47,Planning / Strategy Error
+48,Information Extraction Error
+49,Instruction Understanding Error
+51,Information Extraction Error
+52,Element Grounding Error
+53,Element Grounding Error
+54,Instruction Understanding Error
+56,Information Extraction Error
+57,Planning / Strategy Error
+58,Planning / Strategy Error
+59,Information Extraction Error
+60,Planning / Strategy Error
+63,Planning / Strategy Error
+64,Planning / Strategy Error
+65,Planning / Strategy Error
+66,Instruction Understanding Error
+67,Instruction Understanding Error
+68,Navigation Error
+70,Planning / Strategy Error
+71,Planning / Strategy Error
+74,Instruction Understanding Error
+76,Information Extraction Error
+78,Instruction Understanding Error
+79,Planning / Strategy Error
+80,Planning / Strategy Error
+81,Information Extraction Error
+82,Element Grounding Error
+83,Planning / Strategy Error
+85,Planning / Strategy Error
+86,Planning / Strategy Error
+88,Element Grounding Error
+89,Element Grounding Error
+90,Planning / Strategy Error
+91,Planning / Strategy Error
+92,Planning / Strategy Error
+93,Instruction Understanding Error
+94,Navigation Error
+95,Instruction Understanding Error
+97,Instruction Understanding Error
