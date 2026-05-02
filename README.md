@@ -511,4 +511,14 @@ In practice, that means:
 
 ## Failure types with corresponding descriptions
 
-Understanding
+- Instruction Understanding Error: The agent misunderstands the task goal or misses constraints such as category, price, date, author, status, or required output format.
+
+- Planning / Strategy Error: The agent chooses the wrong overall workflow, such as using basic search instead of filters, creating a new item instead of editing/reposting, or skipping a required intermediate step.
+
+- Navigation Error: The agent goes to the wrong page, tab, menu, website section, or site. This is one of the most common failures in WebArena-style tasks.
+
+- Element Grounding Error: The agent interacts with the wrong button, link, input box, checkbox, dropdown, or visually similar element. This is widely discussed in web-agent work because HTML/UI elements are often ambiguous.
+
+- Information Extraction Error: The agent reaches a relevant page but reads or reasons over the content incorrectly, such as selecting the wrong search result, misreading reviews, missing relevant issues/commits, or returning the wrong answer.
+
+- State Tracking / Memory Error: The agent loses track of previous actions, selected filters, opened pages/tabs, intermediate results, or earlier task constraints during a long trajectory.
