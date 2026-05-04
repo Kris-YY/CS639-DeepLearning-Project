@@ -1,0 +1,1 @@
+This folder contains the classification result CSV file for the plan-and-act model's failed tasks. The first column in the csv file is the task id, and the second column is the corresponding failure type. The classifier script is shared from Base-Failure_Results-Classification/. The LLM being used as a Judge is DeepSeek.
