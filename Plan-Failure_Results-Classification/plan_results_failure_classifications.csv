@@ -1,6 +1,6 @@
 task_id,failure_type
 0,Navigation Error
-1,Navigation Error
+1,Planning / Strategy Error
 3,Planning / Strategy Error
 5,Planning / Strategy Error
 7,Planning / Strategy Error
@@ -10,10 +10,10 @@ task_id,failure_type
 15,Information Extraction Error
 16,Planning / Strategy Error
 18,Planning / Strategy Error
-19,Navigation Error
-20,Instruction Understanding Error
+19,Element Grounding Error
+20,Planning / Strategy Error
 22,Information Extraction Error
-24,Navigation Error
+24,Planning / Strategy Error
 25,Planning / Strategy Error
 26,Planning / Strategy Error
 27,Planning / Strategy Error
@@ -24,13 +24,13 @@ task_id,failure_type
 33,Planning / Strategy Error
 34,Information Extraction Error
 35,Planning / Strategy Error
-38,Navigation Error
-41,Navigation Error
+38,Planning / Strategy Error
+41,Planning / Strategy Error
 44,Planning / Strategy Error
 45,Planning / Strategy Error
-47,Information Extraction Error
+47,Planning / Strategy Error
 48,Planning / Strategy Error
-51,Information Extraction Error
+51,Planning / Strategy Error
 52,Planning / Strategy Error
 53,Planning / Strategy Error
 54,Planning / Strategy Error
@@ -43,23 +43,23 @@ task_id,failure_type
 65,Planning / Strategy Error
 67,Planning / Strategy Error
 69,Planning / Strategy Error
-70,Information Extraction Error
-71,Navigation Error
+70,Planning / Strategy Error
+71,Planning / Strategy Error
 74,Information Extraction Error
 75,Planning / Strategy Error
 76,Planning / Strategy Error
 77,Planning / Strategy Error
 78,Planning / Strategy Error
-79,Instruction Understanding Error
+79,Planning / Strategy Error
 80,Planning / Strategy Error
-81,Information Extraction Error
+81,Planning / Strategy Error
 82,Planning / Strategy Error
 85,Planning / Strategy Error
 86,Planning / Strategy Error
 88,Element Grounding Error
 90,Planning / Strategy Error
-92,Navigation Error
+92,Planning / Strategy Error
 93,Planning / Strategy Error
 95,Information Extraction Error
-97,Instruction Understanding Error
+97,Planning / Strategy Error
 98,Planning / Strategy Error
