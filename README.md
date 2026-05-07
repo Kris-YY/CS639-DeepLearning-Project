@@ -522,3 +522,16 @@ In practice, that means:
 - Information Extraction Error: The agent reaches a relevant page but reads or reasons over the content incorrectly, such as selecting the wrong search result, misreading reviews, missing relevant issues/commits, or returning the wrong answer.
 
 - State Tracking / Memory Error: The agent loses track of previous actions, selected filters, opened pages/tabs, intermediate results, or earlier task constraints during a long trajectory.
+
+# Failure Step Analysis
+
+This folder contains the code and outputs for failure step localization.
+
+## Structure
+
+- code/: LLM-based failure localization script
+- results/: CSV outputs of failure step analysis
+
+## Method
+
+We use DeepSeek as an LLM judge to identify the earliest visible failure step in failed WebArena trajectories.
